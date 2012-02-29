@@ -37,7 +37,7 @@ body{
 
 #calc {
 	margin: 0 auto;
-	width: 300px;
+	width: 380px;
 	background-color: #eee;
 
 	padding: 10px;
@@ -71,7 +71,7 @@ p {
   font-size: 50px;
   text-align: right;
   padding-right: 10px;
-  color: #222;  
+  color: #222; 
   
   background: #b9c3b7; /* Old browsers */
   background: -moz-linear-gradient(top, #b9c3b7 0%, #8e998e 100%); /* FF3.6+ */
@@ -142,10 +142,35 @@ li button:active{
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-li:nth-child(4n+1){
+li:nth-child(5n+1){
   margin-left: 0;
 }
 
-li:nth-child(4n){
+li:nth-child(5n){
   margin-right: 0;
+}
+
+sup{
+  vertical-align: top;
+  font-size: .6em;
+}
+
+button.num {
+  background: rgb(97,115,150); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(97,115,150,1) 0%, rgba(50,58,86,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(97,115,150,1)), color-stop(100%,rgba(50,58,86,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(97,115,150,1) 0%,rgba(50,58,86,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(97,115,150,1) 0%,rgba(50,58,86,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(97,115,150,1) 0%,rgba(50,58,86,1) 100%); /* IE10+ */
+  background: linear-gradient(top, rgba(97,115,150,1) 0%,rgba(50,58,86,1) 100%); /* W3C */
+}
+
+button#equals{
+  background: rgb(107,71,78); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(107,71,78,1) 0%, rgba(66,41,46,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(107,71,78,1)), color-stop(100%,rgba(66,41,46,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(107,71,78,1) 0%,rgba(66,41,46,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(107,71,78,1) 0%,rgba(66,41,46,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(107,71,78,1) 0%,rgba(66,41,46,1) 100%); /* IE10+ */
+  background: linear-gradient(top, rgba(107,71,78,1) 0%,rgba(66,41,46,1) 100%); /* W3C */
 }
