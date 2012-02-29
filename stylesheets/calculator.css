@@ -1,16 +1,40 @@
+html{	
+  
+	background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, rgba(0,0,0,0.65),rgba(0,0,0,0.8)); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.8) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.8) 100%); /* IE10+ */
+  background: radial-gradient(center, ellipse cover, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.8) 100%); /* W3C */
+
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
 body{
 	font-family: 'Open Sans', sans-serif;
-	background-image: url('../images/purty_wood.png');
-	background-repeat: repeat-x repeat-y;
+	
+	/*background-image: url('../images/graphy.png');
+	background-repeat: repeat-x repeat-y;*/
+	
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 #calc {
-	margin: 30px auto;
+	margin: 0 auto;
+	margin-top: 100px;
 	width: 300px;
 	background-color: #eee;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	padding: 10px;
+	
+	-webkit-transform-style: preserve-3d;
+  -webkit-transform: perspective(500px) rotateX(15deg);
 	
 	background: #d8dfe1; /* Old browsers */
   background: -moz-linear-gradient(top, #d8dfe1 0%, #abb2b6 100%); /* FF3.6+ */
