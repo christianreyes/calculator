@@ -5,7 +5,7 @@ $(function(){
     if(key >= 48 && key <= 57){
       display(display() + String(key - 48));
     } else if(key == 8){
-      display(display().substring(0,display().length-1))
+      back();
     }
   });
   

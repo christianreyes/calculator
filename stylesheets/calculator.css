@@ -31,8 +31,11 @@ body{
 
 #wrapper{
   -webkit-perspective: 500px;
+  
+  /* REPORT TO W3C!!!!!! THIS BREAKS BUTTONS!
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
+  */
 }
 
 #calc {
@@ -43,8 +46,6 @@ body{
 	padding: 10px;
 	
 	-webkit-transform: rotateX(4deg);
-
-  -webkit-perspective: 500px;
 	
 	background: #d8dfe1; /* Old browsers */
   background: -moz-linear-gradient(top, #d8dfe1 0%, #abb2b6 100%); /* FF3.6+ */
@@ -118,9 +119,9 @@ li button {
   
   color: white;
   
-  -webkit-transform: translateZ(10px);
   
   /*
+  -webkit-transform: translateZ(10px);
   -webkit-transition: 0.1s linear all;
   -moz-transition: 0.1s linear all;
   transition: 0.1s linear all;
