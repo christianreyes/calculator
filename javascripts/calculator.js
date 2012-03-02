@@ -7,6 +7,8 @@ $(function(){
     } else if(key == 8){
       back();
     }
+    
+    return false;
   });
   
   
