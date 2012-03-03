@@ -15,6 +15,10 @@ $(function(){
     return false;
   });
   
+  $(window).mousemove(function(e){
+    $('#paw').css("top", e.pageY - 85).css("left", e.pageX - 190);
+  });
+  
   $('.operation').click(function(){
     var id = $(this).attr('id');
     
