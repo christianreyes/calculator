@@ -38,6 +38,10 @@ body{
   */
 }
 
+p {
+  height: 68px;
+}
+
 #calc {
 	margin: 0 auto;
 	width: 380px;
