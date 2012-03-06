@@ -16,7 +16,7 @@ $(function(){
   });
   
   $(window).mousemove(function(e){
-    $('#paw').css("top", e.pageY - 85).css("left", e.pageX - 190);
+    $('#paw').css("top", e.pageY - 80).css("left", e.pageX - 190);
   });
   
   $('.operation').click(function(){
@@ -57,8 +57,11 @@ $(function(){
     num_pressed($(this).text());
   });
   
-  $('#larrow').click(function(){
-    back();
+  $('#clear').click(function(){
+    evalstr = "";
+    answer = 0;
+    op_in_progress = false;
+    display("0");
   });
 });
 
